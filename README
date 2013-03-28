@@ -1,0 +1,44 @@
+Photorg Programming Language
+Created by Michael duPont (flyinactor91@gmail.com)
+v1.0.0 [5 012 2012]
+Python 2.7.3 - Unix
+
+
+
+Usage: ./photorg.py (file-name.ptg) (debug [False]/True)
+File call without filename and debug boolean launches user prompt
+Filename must have the .ptg extention
+Debug boolean turns debug on and overrides in-line changes. False by default
+Photo-specific functions support: .jpg .jpeg .png .gif .tiff
+
+
+
+Quick Photorg 1.0.0 Language Useage Guide
+
+(...) indicates text optional
+[...] indicates text required
+
+
+separate [folderName] [exifName:exifValue] ([exifName:exifValue]...)
+    Runs through current directory and copies photos that match all
+    the given criteria into a new folder in the current directory
+
+showexif [fileName]         Lists all exif data for a photo
+listphotos                  Lists all photos in current directory
+setdir [this/folderPath]    Set photo directory
+getdir                      Returns current photo directory
+
+for [varName] in [endNum/startNum..endNum] (by [skipNum]):[statement](;[statement]...)
+    Structure of a for-loop
+    Supports inner loops with one statement
+    All other statements are considdered part of the outer loop
+
++ - * / ** % ( )            All basic math functions supported
+[varName] = [varValue]      Assign a value to a variable
+delete [varName]            Remove the variable and value
+type [varName]              Check the type of a variable
+// (Text)                   Comment out a line
+print (Text and $var$)      Output a line to the console
+println (number)            Output (number) of empty lines
+debug [on/off]              Turn the debugger on or off
+quit                        Exit the interactive prompt

@@ -1,0 +1,6 @@
+//setdir /home/michael/Pictures/Uploads
+setdir this+Uploads
+
+separate iOS_Landscape ExifImageHeight:720 ExifImageWidth:960
+
+separate Apple Make:Apple

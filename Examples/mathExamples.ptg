@@ -1,0 +1,7 @@
+//Math For-Loops
+
+for i in 10:for j in 3:y=i+j;print y
+println 2
+for i in 10:for j in 3:i+j;print ---
+println 2
+for i in 0..10:for j in 0..3:i+j;print ---
